@@ -25,7 +25,7 @@ nav {
     border-radius: 50px;
     background-color: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(10px);
-    white-space: nowrap;     
+    white-space: nowrap;
 }
 
 .menu {
@@ -64,14 +64,14 @@ nav {
     font-size: 100px;
     text-shadow: 3px 3px 10px rgba(184, 173, 30, 0.7);
     padding: 50px;
-    font-family:sans-serif;
+    font-family: sans-serif;
 }
 
 .page-header h3 {
     font-size: 30px;
     text-shadow: 3px 3px 10px rgba(202, 197, 197, 0.7);
     padding: 50px;
-    color:#0a0a0a;
+    color: #0a0a0a;
 }
 
 .trip-info {
@@ -95,7 +95,7 @@ nav {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.3); 
+    background: rgba(0, 0, 0, 0.3);
     border-radius: 15px;
     z-index: 0;
 }
@@ -103,17 +103,17 @@ nav {
 .trip-info .info-box {
     position: relative;
     z-index: 1;
-    background: rgba(255,255,255,0.95);
+    background: rgba(255, 255, 255, 0.95);
     flex: 1 1 30%;
     padding: 25px;
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .trip-info .info-box:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .info-box h2 {
@@ -155,9 +155,10 @@ nav {
     position: relative;
     background-attachment: fixed;
 }
-.contact-form h2{
-    text-align:center;
-    color:antiquewhite;
+
+.contact-form h2 {
+    text-align: center;
+    color: antiquewhite;
     font-weight: bold;
 }
 
@@ -168,17 +169,17 @@ nav {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.3);
+    background: rgba(0, 0, 0, 0.3);
     z-index: 0;
 }
 
 .contact-form .form-container {
     position: relative;
     z-index: 1;
-    background: rgba(255,255,255,0.95);
+    background: rgba(255, 255, 255, 0.95);
     padding: 20px;
     border-radius: 15px;
-    width:auto;
+    width: auto;
     max-width: 400px;
     margin: auto;
 }
@@ -196,7 +197,7 @@ nav {
 .contact-form input:focus,
 .contact-form textarea:focus {
     border-color: #1e69cc;
-    box-shadow: 0 0 8px rgba(30,105,204,0.5);
+    box-shadow: 0 0 8px rgba(30, 105, 204, 0.5);
     outline: none;
 }
 
@@ -222,6 +223,7 @@ nav {
         flex-direction: column;
         padding: 40px 20px;
     }
+
     .trip-info .info-box {
         flex: 1 1 100%;
     }
