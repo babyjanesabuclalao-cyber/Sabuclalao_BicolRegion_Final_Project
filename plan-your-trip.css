@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+nav {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+
+.container {
+    display: inline-block;
+    padding: 20px 35px;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    white-space: nowrap;     
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    flex-wrap: nowrap;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: color 0.3s;
+    gap: 8%;
+}
+
+.menu li a:hover {
+    color: #545554;
+    transform: translateY(-2px);
+}
+
+.page-header {
+    background: url('images/bg.planyourtrip.webp') no-repeat center center/cover;
+    text-align: center;
+    padding: 100px;
+    color: white;
+    background-attachment: fixed;
+}
+
+.page-header h1 {
+    font-size: 100px;
+    text-shadow: 3px 3px 10px rgba(184, 173, 30, 0.7);
+    padding: 50px;
+    font-family:sans-serif;
+}
+
+.page-header h3 {
+    font-size: 30px;
+    text-shadow: 3px 3px 10px rgba(202, 197, 197, 0.7);
+    padding: 50px;
+    color:#0a0a0a;
+}
+
+.trip-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+    background: url('images/mayon.jpg') no-repeat center center/cover;
+    padding: 100px 100px;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.trip-info::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3); 
+    border-radius: 15px;
+    z-index: 0;
+}
+
+.trip-info .info-box {
+    position: relative;
+    z-index: 1;
+    background: rgba(255,255,255,0.95);
+    flex: 1 1 30%;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.trip-info .info-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.info-box h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #1e69cc;
+
+}
+
+.itinerary-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.itinerary-table th,
+.itinerary-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+.itinerary-table th {
+    background-color: #1e69cc;
+    color: white;
+}
+
+.info-box ul {
+    list-style: disc inside;
+}
+
+.info-box ul li {
+    margin-bottom: 10px;
+}
+
+.contact-form {
+    width: 100%;
+    padding: 80px 20px;
+    background: url('images/SumlangLakeAlbay.jpg') no-repeat center center/cover;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+.contact-form h2{
+    text-align:center;
+    color:antiquewhite;
+    font-weight: bold;
+}
+
+.contact-form::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    z-index: 0;
+}
+
+.contact-form .form-container {
+    position: relative;
+    z-index: 1;
+    background: rgba(255,255,255,0.95);
+    padding: 20px;
+    border-radius: 15px;
+    width:auto;
+    max-width: 400px;
+    margin: auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #1e69cc;
+    box-shadow: 0 0 8px rgba(30,105,204,0.5);
+    outline: none;
+}
+
+.contact-form button {
+    width: 120px;
+    padding: 12px;
+    border: none;
+    background-color: #1e69cc;
+    color: white;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s, transform 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #500707;
+    transform: translateY(-2px);
+}
+
+@media(max-width: 900px) {
+    .trip-info {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+    .trip-info .info-box {
+        flex: 1 1 100%;
+    }
+}
+
+.footer {
+    background-color: #b5c8ee;
+    color: #0a0a0a;
+    text-align: center;
+    padding: 20px 10px;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+.footer-content p {
+    margin: 5px 0;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.footer-content p:first-child {
+    font-weight: bold;
+    letter-spacing: 1px;
+}

@@ -1,97 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plan Your Trip - Bicol Region</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Travel Guide</title>
+    <link rel="stylesheet" href="plan-your-trip.css">
+    <link rel="icon" type="image/png" href="images/mayon.jpg">
 </head>
+
 <body>
 
-    <!-- Navigation -->
+
     <nav>
-        <ul class="nav-menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="destinations.html">Destinations</a></li>
-            <li><a href="activities.html">Activities</a></li>
-            <li><a href="history.html">History & Culture</a></li>
-            <li><a href="plan-your-trip.html">Plan Your Trip</a></li>
-        </ul>
+        <div class="container">
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="history.html">History & Culture</a></li>
+                <li><a href="plan-your-trip.html">Plan Your Trip</a></li>
+            </ul>
+        </div>
     </nav>
 
     <section class="page-header">
         <h1>Plan Your Trip</h1>
+        <h3>"Life is short, and the world is wide. The sooner you start exploring it, the better." - Simon Raven</h3>
     </section>
 
-    <!-- 3-Day Itinerary Table -->
-    <section class="itinerary">
-        <h2>3-Day Suggested Itinerary</h2>
-        <table border="1" cellpadding="10" cellspacing="0">
-            <tr>
-                <th>Day</th>
-                <th>Activities</th>
-            </tr>
-            <tr>
-                <td>Day 1</td>
-                <td>Arrival, City Tour, Cagsawa Ruins</td>
-            </tr>
-            <tr>
-                <td>Day 2</td>
-                <td>Mayon Volcano ATV, Local Food Tour</td>
-            </tr>
-            <tr>
-                <td>Day 3</td>
-                <td>Beach/Island Hopping, Departure</td>
-            </tr>
-        </table>
+    <section class="trip-info">
+        <div class="info-box">
+            <h2>3-Day Suggested Itinerary</h2>
+            <table class="itinerary-table">
+                <tr>
+                    <th>Day</th>
+                    <th>Activities</th>
+                </tr>
+                <tr>
+                    <td>Day 1</td>
+                    <td>Arrival, City Tour, Cagsawa Ruins</td>
+                </tr>
+                <tr>
+                    <td>Day 2</td>
+                    <td>Mayon Volcano ATV, Local Food Tour</td>
+                </tr>
+                <tr>
+                    <td>Day 3</td>
+                    <td>Beach/Island Hopping, Departure</td>
+                </tr>
+            </table>
+        </div>
+
+
+        <div class="info-box">
+            <h2>Travel Tips</h2>
+            <ul>
+                <li>Always carry water and snacks.</li>
+                <li>Wear comfortable shoes.</li>
+                <li>Keep your valuables safe.</li>
+                <li>Check weather before packing.</li>
+                <li>Plan transportation in advance.</li>
+
+
+            </ul>
+        </div>
+
+        <div class="info-box">
+            <h2>Packing Checklist</h2>
+            <ul>
+                <li>Comfortable clothing</li>
+                <li>Sunblock and hat</li>
+                <li>Reusable water bottle</li>
+                <li>Travel documents</li>
+                <li>Phone, charger, and power bank</li>
+                <li>MONEY</li>
+            </ul>
+        </div>
     </section>
 
-    <!-- Travel Tips -->
-    <section class="travel-tips">
-        <h2>Travel Tips</h2>
-        <ul>
-            <li>Book accommodations early during festival season.</li>
-            <li>Bring cash as some areas have limited ATMs.</li>
-            <li>Respect local customs and traditions.</li>
-        </ul>
-    </section>
 
-    <!-- Packing Checklist -->
-    <section class="packing-list">
-        <h2>Packing Checklist</h2>
-        <ul>
-            <li>Comfortable clothing</li>
-            <li>Sunblock and hat</li>
-            <li>Reusable water bottle</li>
-            <li>Travel documents</li>
-        </ul>
-    </section>
-
-    <!-- Contact Form -->
     <section class="contact-form">
         <h2>Contact Us</h2>
-        <form>
-            <label>Full Name:</label><br>
-            <input type="text" name="fullname" required><br><br>
+        <div class="form-container">
+            <form>
+                <label>Full Name:</label>
+                <input type="text" name="fullname" placeholder="Enter your name" required>
 
-            <label>Email Address:</label><br>
-            <input type="email" name="email" required><br><br>
+                <label>Email Address:</label>
+                <input type="email" name="email" placeholder="Enter your email" required>
 
-            <label>Planned Visit Date:</label><br>
-            <input type="date" name="visitdate" required><br><br>
+                <label>Planned Visit Date:</label>
+                <input type="date" name="visitdate" required>
 
-            <label>Number of Travelers:</label><br>
-            <input type="number" name="travelers" min="1" required><br><br>
+                <label>Number of Travelers:</label>
+                <input type="number" name="travelers" min="1" required>
 
-            <textarea name="questions" rows="4"></textarea><br><br>
+                <label>Your / More Questions:</label>
+                <textarea name="questions" rows="4" placeholder="Type your questions here"></textarea>
 
-            <button type="submit">Send</button>
-        </form>
+                <button type="submit">Send</button>
+            </form>
+        </div>
     </section>
 
-    <footer>
-        <p>Contact us: travelbicol@example.com | © 2025 Bicol Region Tourism</p>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Bicol Region V</p>
+            <p>Explore the beauty, culture, and wonders of Bicol.</p>
+            <p>Email: babyjane.sabuclalao@lsu.edu.ph : Contact: 0938-207-6721</p>
+        </div>
     </footer>
 
 </body>
+
 </html>
